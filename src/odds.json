@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Odds of Getting Cancer",
+    "slug": "odds-of-getting-cancer",
+    "data": [
+      {
+        "name": "Odds of getting cancer",
+        "value": 50
+      },
+      {
+        "name": "No cancer",
+        "value": 50
+      }
+    ]
+  }
+]
