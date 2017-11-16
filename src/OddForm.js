@@ -10,12 +10,16 @@ class OddForm extends Component {
 
   render() {
     return (
-      <div>
-        <form>
-          <input ref="title" type="text" placeholder="Title of Odd Statistic" />
-          <input ref="probability" type="text" placeholder="Probability. Example: 50%" />
-          <button onClick={this.handleFormSubmit.bind(this)}>Submit</button>
-        </form>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <form>
+              <input ref="title" type="text" placeholder="Title of Odd Statistic" />
+              <input ref="probability" type="text" placeholder="Probability. Example: 50%" />
+              <button onClick={this.handleFormSubmit.bind(this)}>Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     )
   }
