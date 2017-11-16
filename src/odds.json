@@ -2,6 +2,7 @@
   {
     "title": "Odds of Getting Cancer",
     "slug": "odds-of-getting-cancer",
+    "source": "http://wikipedia.org",
     "data": [
       {
         "name": "Odds of getting cancer",
@@ -16,6 +17,7 @@
   {
     "title": "Odds of Dying",
     "slug": "odds-of-dying",
+    "source": "http://wikipedia.org",
     "data": [
       {
         "name": "Odds of Dying",

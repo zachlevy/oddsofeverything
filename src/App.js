@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Odds from './Odds'
 import Home from './Home'
+import OddForm from './OddForm'
 import { Switch, Route, Link } from 'react-router-dom'
 
 class App extends Component {
@@ -14,10 +15,12 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
           <Link to="/odds/odds-of-getting-cancer">Cancer</Link>
           <Link to="/odds/odds-of-dying">Dying</Link>
+          <Link to="/submit">Submit</Link>
         </header>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/odds/:slug' component={Odds}/>
+          <Route exact path='/submit' component={OddForm}/>
         </Switch>
       </div>
     );
