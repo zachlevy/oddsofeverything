@@ -13,10 +13,17 @@ class OddForm extends Component {
       <div className="container">
         <div className="row">
           <div className="col-12">
+            <h4>Submit a Statistics</h4>
+            <p>We love getting suggestions for adding statistics! Please send us any you have, make sure to include a source.</p>
             <form>
-              <input ref="title" type="text" placeholder="Title of Odd Statistic" />
-              <input ref="probability" type="text" placeholder="Probability. Example: 50%" />
-              <button onClick={this.handleFormSubmit.bind(this)}>Submit</button>
+              <label htmlFor="title">Title</label>
+              <input id="title" ref="title" type="text" placeholder="Odds of Getting Cancer" className="form-control" />
+              <label htmlFor="probability">Probability</label>
+              <input id="probability" ref="probability" type="text" placeholder="50%" className="form-control" />
+              <label htmlFor="source">Source</label>
+              <input id="source" ref="source" type="text" placeholder="http://wikipedia.org" className="form-control" />
+              <br />
+              <button className="btn btn-primary" onClick={this.handleFormSubmit.bind(this)}>Submit</button>
             </form>
           </div>
         </div>
