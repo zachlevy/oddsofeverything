@@ -5,15 +5,16 @@
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "recharts": "^1.0.0-beta.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "REACT_APP_DOMAIN=http://localhost:3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && aws s3 sync build/ s3://oddsofeverything.com"
+    "deploy": "REACT_APP_DOMAIN=http://oddsofeverything.com npm run build && aws s3 sync build/ s3://oddsofeverything.com"
   }
 }
