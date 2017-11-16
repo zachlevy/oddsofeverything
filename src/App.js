@@ -20,17 +20,17 @@ class App extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/odds/odds-of-getting-cancer" className="nav-link">
+                <Link to="/odds/odds-of-getting-cancer/" className="nav-link">
                   Cancer
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/odds/odds-of-dying" className="nav-link">
+                <Link to="/odds/odds-of-dying/" className="nav-link">
                   Dying
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/submit" className="nav-link">
+                <Link to="/submit/" className="nav-link">
                   Submit
                 </Link>
               </li>
@@ -40,8 +40,8 @@ class App extends Component {
         <br />
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/odds/:slug' component={Odds}/>
-          <Route exact path='/submit' component={OddForm}/>
+          <Route path='/odds/:slug/' component={Odds}/>
+          <Route exact path='/submit/' component={OddForm}/>
         </Switch>
       </div>
     );
