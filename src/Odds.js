@@ -4,15 +4,12 @@ import odds from './odds.json'
 import { Helmet } from 'react-helmet'
 
 class Odds extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+    const foundOdd = odds.find((odd) => odd.slug === props.match.params.slug)
     this.state = {
-      odd: null
+      odd: foundOdd
     }
-  }
-  componentDidMount() {
-    const foundOdd = odds.find((odd) => odd.slug === this.props.match.params.slug)
-    this.setState({odd: foundOdd})
   }
   componentWillReceiveProps(newProps) {
     if (newProps.match.params.slug !== this.props.match.params.slug) {
