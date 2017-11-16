@@ -12,5 +12,19 @@
         "value": 50
       }
     ]
+  },
+  {
+    "title": "Odds of Dying",
+    "slug": "odds-of-dying",
+    "data": [
+      {
+        "name": "Odds of Dying",
+        "value": 100
+      },
+      {
+        "name": "Not dying",
+        "value": 0
+      }
+    ]
   }
 ]
