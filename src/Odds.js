@@ -49,7 +49,18 @@ class Odds extends Component {
           <div className="col-12">
             <h3 className="odd-subtitle">Odds of</h3>
             <h1 className="odd-title">{this.state.odd && this.state.odd.title}</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
             {odd}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <a target="_blank" href={this.state.odd && this.state.odd.source} className="source-link">
+              Source
+            </a>
           </div>
         </div>
       </div>
