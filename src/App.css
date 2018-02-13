@@ -5,6 +5,7 @@ body {
   padding-top: 56px;
   background-color: black;
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 .odd-title {
   font-size: 6em;
