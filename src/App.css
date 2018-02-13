@@ -1,3 +1,18 @@
+html {
+  background-color: black;
+}
 body {
   padding-top: 56px;
+  background-color: black;
+  color: white;
+}
+.odd-title {
+  font-size: 6em;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.odd-subtitle {
+  font-size: 3em;
+  margin-bottom: 0;
+  color: #bbb;
 }

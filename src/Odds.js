@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { PieChart, Pie, Legend, Tooltip } from 'recharts'
+import { ResponsiveContainer, PieChart, Pie, Legend, Tooltip } from 'recharts'
 import odds from './odds.json'
 import { Helmet } from 'react-helmet'
 
@@ -21,10 +21,12 @@ class Odds extends Component {
     let odd
     if (this.state.odd) {
       odd = (
-        <PieChart width={400} height={400}>
-          <Pie data={this.state.odd.data} cx={200} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d"/>
-          <Tooltip/>
-        </PieChart>
+        <ResponsiveContainer  width={"100%"} height={500}>
+          <PieChart>
+            <Pie data={this.state.odd.data} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"} fill="#82ca9d"/>
+            <Tooltip/>
+          </PieChart>
+        </ResponsiveContainer>
       )
     }
     let helmet
@@ -45,7 +47,8 @@ class Odds extends Component {
         {helmet}
         <div className="row">
           <div className="col-12">
-            <h3>{this.state.odd && this.state.odd.title}</h3>
+            <h3 className="odd-subtitle">Odds of</h3>
+            <h1 className="odd-title">{this.state.odd && this.state.odd.title}</h1>
             {odd}
           </div>
         </div>

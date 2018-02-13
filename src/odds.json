@@ -1,6 +1,6 @@
 [
   {
-    "title": "Odds of Getting Cancer",
+    "title": "Getting Cancer",
     "slug": "odds-of-getting-cancer",
     "source": "http://wikipedia.org",
     "data": [
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "title": "Odds of Dying",
+    "title": "Dying",
     "slug": "odds-of-dying",
     "source": "http://wikipedia.org",
     "data": [
