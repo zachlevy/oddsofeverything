@@ -43,7 +43,7 @@ class Odds extends Component {
       odd = (
         <ResponsiveContainer  width={"100%"} height={500}>
           <PieChart>
-            <Pie data={themedData} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"}/>
+            <Pie data={themedData} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"} label={(dataPoint) => {return `${dataPoint.value}%`}}/>
             <Tooltip/>
           </PieChart>
         </ResponsiveContainer>
