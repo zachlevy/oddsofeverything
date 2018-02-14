@@ -28,5 +28,27 @@
         "value": 0
       }
     ]
+  },{
+    "title": "Getting Hit By A Vehicle",
+    "slug": "odds-of-vehicle",
+    "source": "http://wikipedia.org",
+    "data": [
+      {
+        "name": "Car",
+        "value": 50
+      },
+      {
+        "name": "Motorcycle",
+        "value": 30
+      },
+      {
+        "name": "Truck",
+        "value": 10
+      },
+      {
+        "name": "Bus",
+        "value": 10
+      }
+    ]
   }
 ]

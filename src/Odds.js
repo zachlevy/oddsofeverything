@@ -3,6 +3,13 @@ import { ResponsiveContainer, PieChart, Pie, Legend, Tooltip } from 'recharts'
 import odds from './odds.json'
 import { Helmet } from 'react-helmet'
 
+// fill colors starting at the second
+const fillColors = [
+  "#333",
+  "#222",
+  "#111"
+]
+
 class Odds extends Component {
   constructor(props) {
     super(props)
@@ -19,11 +26,24 @@ class Odds extends Component {
   }
   render() {
     let odd
+    const themedData = this.state.odd.data.map((dataPoint, index) => {
+      if (index === 0) {
+        dataPoint.stroke = "none"
+        dataPoint.fill = "#e21288"
+      } else if (index === this.state.odd.data.length - 1) {
+        dataPoint.fill = ""
+      } else if (index >= fillColors.length) {
+        dataPoint.fill = ""
+      } else {
+        dataPoint.fill = fillColors[index - 1]
+      }
+      return dataPoint
+    })
     if (this.state.odd) {
       odd = (
         <ResponsiveContainer  width={"100%"} height={500}>
           <PieChart>
-            <Pie data={this.state.odd.data} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"} fill="#82ca9d"/>
+            <Pie data={themedData} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"}/>
             <Tooltip/>
           </PieChart>
         </ResponsiveContainer>
