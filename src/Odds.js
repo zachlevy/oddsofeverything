@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ResponsiveContainer, PieChart, Pie, Legend, Tooltip } from 'recharts'
+import { ResponsiveContainer, PieChart, Pie, Legend, Tooltip, Cell, LabelList } from 'recharts'
 import odds from './odds.json'
 import { Helmet } from 'react-helmet'
 
@@ -43,7 +43,11 @@ class Odds extends Component {
       odd = (
         <ResponsiveContainer  width={"100%"} height={500}>
           <PieChart>
-            <Pie data={themedData} cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"} label={(dataPoint) => {return `${dataPoint.value}%`}}/>
+            <Pie cx={"50%"} cy={"50%"} innerRadius={"40%"} outerRadius={"80%"} label={(dataPoint) => {return `${dataPoint.value}% ${dataPoint.name}`}}>
+              {themedData.map((dataPoint) => {
+                return <Cell name={dataPoint.name} value={dataPoint.value} fill={dataPoint.fill} />
+              })}
+            </Pie>
             <Tooltip/>
           </PieChart>
         </ResponsiveContainer>
