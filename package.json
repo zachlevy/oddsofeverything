@@ -8,7 +8,7 @@
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
-    "recharts": "^1.0.0-beta.1"
+    "recharts": "^1.2.0"
   },
   "scripts": {
     "start": "REACT_APP_DOMAIN=http://localhost:3000 react-scripts start",
