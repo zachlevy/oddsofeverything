@@ -4,23 +4,40 @@
 /* #aaf514 */
 
 html {
-  background-color: black;
 }
 body {
   padding-top: 56px;
-  background-color: black;
+  /* background-color: black; */
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   color: white;
   font-family: 'Comfortaa', cursive;
+}
+.navbar-light {
+  background-color: white;
 }
 .odd-title {
   font-size: 6em;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 .odd-subtitle {
   font-size: 3em;
   margin-bottom: 0;
-  color: #bbb;
+  color: #ddd;
+}
+/* sm and below */
+@media (max-width: 767.98px) {
+  .odd-title {
+    font-size: 2em;
+    padding-top: 0.1em;
+  }
+  .odd-subtitle {
+    font-size: 1em;
+    padding-bottom: 0.2em;
+  }
 }
 a.source-link {
   color: #aaf514;

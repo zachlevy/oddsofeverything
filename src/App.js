@@ -10,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
-          <Link to="/" className="navbar-brand">Navbar</Link>
+        <nav className="navbar navbar-expand-md navbar-light fixed-top">
+          <Link to="/" className="navbar-brand">odds of everything</Link>
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">

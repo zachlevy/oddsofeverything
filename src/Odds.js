@@ -5,9 +5,9 @@ import { Helmet } from 'react-helmet'
 
 // fill colors starting at the second
 const fillColors = [
-  "#333",
-  "#222",
-  "#111"
+  "#666",
+  "#444",
+  "#555"
 ]
 
 class Odds extends Component {
@@ -29,9 +29,9 @@ class Odds extends Component {
     const themedData = this.state.odd.data.map((dataPoint, index) => {
       if (index === 0) {
         dataPoint.stroke = "none"
-        dataPoint.fill = "#e21288"
+        dataPoint.fill = "#fff"
       } else if (index === this.state.odd.data.length - 1) {
-        dataPoint.fill = ""
+        dataPoint.fill = "#333"
       } else if (index >= fillColors.length) {
         dataPoint.fill = ""
       } else {
